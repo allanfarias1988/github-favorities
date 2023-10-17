@@ -1,0 +1,167 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classe para conteúdo acessível apenas para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Variáveis de cores */
+:root {
+    background-color: #000;
+}
+
+/* Estilos globais do corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container principal */
+#app {
+    margin-top: 7.1875rem;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7.5rem;
+    justify-content: center;
+}
+
+/* Estilos comuns para botões e campos de entrada */
+button,
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos do cabeçalho */
+header {
+    width: 70rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 12.5rem;
+    height: 2rem;
+}
+
+header input {
+    width: 28.75rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: .3125rem;
+    outline: none;
+    border: none;
+    background: #06181C;
+    color: #E1E1E6;
+    caret-color: #fff;
+}
+
+header input::selection {
+    background-color: #076c8f;
+    color: #fff;
+}
+
+header input::placeholder {
+    color: #7C7C8A;
+}
+
+header button {
+    width: 10.625rem;
+    height: 3rem;
+    padding-left: 1.5rem;
+    color: #fff;
+    border-radius: .3125rem;
+    background: #065E7C url('./assets/star.svg') no-repeat 2rem;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+header button:hover {
+    color: #065E7C;
+    background: #fff url('./assets/star-blue.svg') no-repeat 2rem;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #E1E1E6;
+    border-radius: .75rem;
+    border: .0625rem solid #4A808C;
+    overflow: hidden;
+}
+
+tr:nth-child(even) {
+    background-color: #06161B80;
+}
+
+tr:nth-child(odd) {
+    background-color: #06181C;
+}
+
+th {
+    background-color: #092D38;
+}
+
+th:nth-child(1) {
+    padding-left: 2.5rem;
+}
+
+table tbody img {
+    width: 3.5rem;
+    height: 3.5rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    border-radius: 3.5rem;
+}
+
+th,
+td {
+    padding: .75rem;
+    text-align: left;
+}
+
+td:nth-child(1) {
+    width: 30%;
+    padding-left: 2.5rem;
+}
+
+td:nth-child(4) {
+    color: #F75A68;
+    cursor: pointer;
+}
+
+/* Estilos para mensagens de "Não encontrado" */
+table tbody .not-found {
+    height: 60vh;
+    width: 100%;
+    color: #4E5455;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.not-found,
+.not-found img {
+    width: 8.25rem;
+    height: 8.25rem;
+    margin-left: 12.5rem;
+}
