@@ -3,11 +3,16 @@
 
 Projeto criado em aula que tem como objetivo praticar os conhecimentos em consulmo de API (API Github).
 
+
+
+
 ## Funcionalidades
 
 - Bucar qualquer usuário no Github
 - Favoritar / Adicionar usuário na tabela
 - Desfavoritar / Remover usuário na tabela
+
+
 
 ## Screenshots
 
@@ -31,6 +36,11 @@ https://allanfarias1988.github.io/github-favorities
 - Aprendi ainda sobre modularização e divisão de responsabilidades em funções JavaScript.
 
 - Projetos, por mais simples que pareçam, sempre apresentam desafios, mas a cada passo que damos, cada correção feita, cada lógica implementada ajuda-nos solidificar os fundamentos tão necessários para a construção da nossa carreira.
+
+
+## Tecnologias utilizadas
+
+**Front-end:** HTML, CSS, JavaScript
 
 
 ## Entre em contato
