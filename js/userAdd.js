@@ -2,6 +2,14 @@ import elements from "./elements.js";
 import displayEmptyTableMessage from "./displayEmptyTableMessage.js";
 
 export default function userAdd(user) {
+  const { id, login, avatar, name, repositories, followers } = user;
+  const isEmptyUser = id == null || login == null;
+  // Verificar se o campo de busca está vazio.
+  if (isEmptyUser) {
+    alert("O campo de busca não pode está vazio!");
+    displayEmptyTableMessage();
+    return;
+  }
   // Referência ao corpo da tabela
   const tableBody = elements.tableBody;
 
@@ -10,7 +18,6 @@ export default function userAdd(user) {
   newRow.id = user.id;
 
   // Desestruturação do objeto user
-  const { avatar, name, repositories, followers } = user;
 
   // Preencher a nova linha com os dados do usuário
   newRow.innerHTML = `
